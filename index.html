@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cloud Web Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #eaf4ff;
+            padding: 60px 15px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+        }
+        button {
+            padding: 12px 20px;
+            background: #1769aa;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Welcome to My Website!</h1>
+        <p>This web application is hosted on the cloud.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "Hello! My cloud application is working.";
+        }
+    </script>
+</body>
+</html>
